@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Fire Emblem Engage: Average Stats Calculator</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css" integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js" integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./index.js"></script>
+</head>
+<body>
+  <div id="my-container" style="margin: 16px;">
+    <h2 class="ui dividing header">
+      Fire Emblem Engage
+      <div class="sub header">Average Stats Calculator</div>
+    </h2>
+
+    <div id="my-form-container" style="float: left; width: 250px; margin: 0 24px 0 0;">
+      <div class="ui form">
+        <h4 class="ui header">Unit Selection</h4>
+        <div class="field">
+          <select id="unit-selection" class="ui dropdown">
+            <option value=""></option>
+            <option value="alear">Alear</option>
+            <option value="vander">Vander</option>
+            <option value="clanne">Clanne</option>
+            <option value="framme">Framme</option>
+          </select>
+        </div>
+        <h4 class="ui header">Class Change</h4>
+        <div class="field">
+          <label>Level</label>
+          <select class="ui dropdown">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div id="my-table-container" style="float: left; width: 500px;">
+      <table class="ui celled table">
+        <thead>
+          <tr>
+            <th>LVL</th>
+            <th>HP</th>
+            <th>STR</th>
+            <th>MAG</th>
+            <th>DEX</th>
+            <th>SPD</th>
+            <th>LCK</th>
+            <th>DEF</th>
+            <th>RES</th>
+            <th>BLD</th>
+          </tr>
+        </thead>
+        <tbody id="my-table-body">
+          <tr>
+            <td class="center aligned" colspan="10"><strong>Dragon Child</strong></td>
+          </tr>
+          <tr>
+            <td data-label="LVL">1</td>
+            <td data-label="HP">22</td>
+            <td data-label="STR">6</td>
+            <td data-label="MAG">0</td>
+            <td data-label="DEX">5</td>
+            <td data-label="SPD">7</td>
+            <td data-label="LCK">5</td>
+            <td data-label="DEF">3</td>
+            <td data-label="RES">5</td>
+            <td data-label="BLD">4</td>
+          </tr>
+          <tr>
+            <td data-label="LVL">2</td>
+            <td data-label="HP">22.7</td>
+            <td data-label="STR">6.45</td>
+            <td data-label="MAG">0.2</td>
+            <td data-label="DEX">5.55</td>
+            <td data-label="SPD">7.65</td>
+            <td data-label="LCK">5.5</td>
+            <td data-label="DEF">3.35</td>
+            <td data-label="RES">5.3</td>
+            <td data-label="BLD">4.1</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

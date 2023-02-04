@@ -1,0 +1,74 @@
+{
+  "units": {
+    "alear": {
+      "name": "Alear",
+      "level": 1,
+      "class": "dragonChild",
+      "stats": {
+        "hp": 22,
+        "str": 6,
+        "mag": 0,
+        "dex": 5,
+        "spd": 7,
+        "def": 5,
+        "res": 3,
+        "lck": 5,
+        "bld": 4
+      },
+      "growth": {
+        "hp": 60,
+        "str": 35,
+        "mag": 20,
+        "dex": 45,
+        "spd": 50,
+        "def": 40,
+        "res": 25,
+        "lck": 25,
+        "bld": 5
+      },
+      "max": {
+        "str": 1,
+        "dex": 1,
+        "spd": 1
+      }
+    }
+  },
+  "classes": {
+    "dragonChild": {
+      "name": "Dragon Child",
+      "base": {
+        "hp": 22,
+        "str": 6,
+        "mag": 0,
+        "dex": 2,
+        "spd": 7,
+        "def": 5,
+        "res": 3,
+        "lck": 2,
+        "bld": 4
+      },
+      "growth": {
+        "hp": 10,
+        "str": 10,
+        "mag": 0,
+        "dex": 10,
+        "spd": 15,
+        "def": 10,
+        "res": 10,
+        "lck": 5,
+        "bld": 5
+      },
+      "max": {
+        "hp": 68,
+        "str": 41,
+        "mag": 25,
+        "dex": 36,
+        "spd": 43,
+        "def": 35,
+        "res": 25,
+        "lck": 35,
+        "bld": 13
+      }
+    }
+  }
+}
